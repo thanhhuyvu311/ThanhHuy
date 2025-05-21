@@ -31,8 +31,6 @@ def LinearRegression(x, y, epoc, alpha, w0, w1):
         loss_store = np.append(loss_store,MSE)
     print(f"ket qua cuoi cung w0 = {w0_store[-1]:.5f} | w1 = {w1_store[-1]:.5f} | MSE = {loss_store[-1]:.5f}")
     return w0, w1, y_mu
-
-
 if __name__ == '__main__':
     x = np.array([53, 70, 27, 51, 66, 80, 90, 42], dtype='float')
     y = np.array([7, 8, 3, 6, 8, 10, 12, 5], dtype='float')
